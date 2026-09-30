@@ -49,6 +49,9 @@ RUN pnpm install --frozen-lockfile
 COPY --chown=node:node ./packages/@n8n/typescript-config/tsconfig.common.json /app/packages/@n8n/typescript-config/tsconfig.common.json
 COPY --chown=node:node ./packages/@n8n/typescript-config/tsconfig.build.json /app/packages/@n8n/typescript-config/tsconfig.build.json
 COPY --chown=node:node ./packages/@n8n/typescript-config/tsconfig.backend.json /app/packages/@n8n/typescript-config/tsconfig.backend.json
+COPY --chown=node:node ./packages/@n8n/typescript-config/tsconfig.common.go.json /app/packages/@n8n/typescript-config/tsconfig.common.go.json
+COPY --chown=node:node ./packages/@n8n/typescript-config/tsconfig.build.go.json /app/packages/@n8n/typescript-config/tsconfig.build.go.json
+COPY --chown=node:node ./packages/@n8n/typescript-config/tsconfig.backend.go.json /app/packages/@n8n/typescript-config/tsconfig.backend.go.json
 COPY --chown=node:node ./packages/@n8n/benchmark/tsconfig.json /app/packages/@n8n/benchmark/tsconfig.json
 COPY --chown=node:node ./packages/@n8n/benchmark/tsconfig.build.json /app/packages/@n8n/benchmark/tsconfig.build.json
 
